@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.6.1.js"></script>
+		<style>
+			
+			#box{
+				width: 50px;
+				height: 50px;
+				margin: 25% auto;
+			}
+			.button{
+				background-color: aqua;
+				border: none;
+				width: 100px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"><input type="button" class="button" value="点击我开始吧~"/></div>
+		<audio id="yy" controls="controls" autoplay" style="display: none;">
+		   <source src="yy/定.mp3"/>
+		</audio>
+	</body>
+	<script>
+		$(function(){
+			
+				
+			
+			$(".button").click(function(){
+				alert("你好！")
+				alert("哈哈哈哈，欢迎来到只有弹窗的网站")
+				alert("我不知道你是如何找到这里的")
+				alert("既然来了那就好好陪俺玩一会吧")
+				alert("你不会直接关闭的，对吧")
+				alert("上次别人把我直接关闭了，我桑心了很久")
+				alert("好无聊啊QAQ，要不俺给你讲个故事吧")
+				alert("从前的山坡上有两只猴~")
+				alert("公猴对母猴说你真丑")
+				alert("母猴对公猴说你扛不扛揍~")
+				alert("公猴说扛揍扛揍你真丑")
+				alert("什么？很无聊？不要走嘛")
+				alert("俺还会很多才艺呢")
+				alert("我会唱跳rap(真IKUN)")
+				alert("还会说学逗唱")
+				alert("琴棋书画当然也不再话下")
+				alert("来给你唱一段：爱滴魔力转圈圈，想你想到心花怒放黑夜白天~")
+				alert("害，我那么无聊你该不会已经退出去了吧")
+				alert("最后我想再对你说点")		
+				alert("不要让你的负面情绪控制着你的生活")
+				alert("不要让你的外表来定义你的灵魂")
+				alert("让你的灵魂指引你的生活")
+				alert("你值得比你想象中更好的生活")
+				alert("你只需要坚信你的梦想")
+				alert("并努力一点一点去实现")
+				alert("最后请你听一首歌吧，陌生人记得每天要快乐哦~")
+				alert("记得调节好音量哦~")
+				var player = $("#yy")[0]; /*jquery对象转换成js对象*/
+				        if (player.paused){ /*如果已经暂停*/
+				            player.play(); /*播放*/
+				        }else {
+				            player.pause();/*暂停*/
+				        }
+			})
+		})
+			
+			
+		
+	</script>
+</html>
